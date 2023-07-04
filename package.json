@@ -1,0 +1,22 @@
+{
+  "name": "javascript-repo",
+  "version": "1.0.0",
+  "description": "Bazinga",
+  "scripts": {
+    "node": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codacy-workshop/javascript-repo.git"
+  },
+  "author": "Codacy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codacy-workshop/javascript-repo/issues"
+  },
+  "homepage": "https://github.com/codacy-workshop/javascript-repo#readme",
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=19.0.0"
+  }
+}
