@@ -15,10 +15,12 @@ console.log(x);
 const person = {
   name: "John",
   age: 25,
+  city: null,
 };
 
 person.age = 30;
 console.log(person);
+console.log(person.city);
 
 const result = 10 / "a";
 console.log(result);
