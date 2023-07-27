@@ -1,14 +1,15 @@
-let globalSum = 0;
-
 let elem = 2;
 
 function calculateSum(obj) {
-  for (elem in obj) {
-    globalSum += elem;
+  let sum = 0;
+
+  for (const elem in obj) {
+    sum += elem;
   }
+
+  return sum;
 }
 
 const data = [10, 20, 30];
 
-calculateSum(data);
-console.log(globalSum * elem);
+console.log(calculateSum(data) * 2);

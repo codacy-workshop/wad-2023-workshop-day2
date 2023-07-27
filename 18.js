@@ -2,7 +2,7 @@ function generateFunctions() {
     const functions = [];
 
     for (let i = 0; i < 3; i++) {
-        functions.push(function () {
+        functions.push(() => {
             console.log("Function " + i + " was called.");
         });
     }

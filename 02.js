@@ -25,5 +25,4 @@ function getSeason(month) {
     }
 }
 
-const x = 20;
-getSeason(x);
+getSeason(20);
