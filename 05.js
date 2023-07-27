@@ -1,6 +1,4 @@
-function createCounter() {
-    count = 0;
-
+function createCounter(count = 0) {
     function increment() {
         count++;
     }
@@ -12,9 +10,11 @@ function createCounter() {
     return { increment, getCount };
 }
 
-const counter = createCounter();
+let c;
+c++;
+const counter = createCounter(c);
 
-count ++;
+
 console.log("Current count:", counter.getCount());
 
 counter.increment();
