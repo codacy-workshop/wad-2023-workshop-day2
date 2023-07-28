@@ -25,6 +25,5 @@ function getSeason(month) {
     }
 }
 
+const x = 20;
 getSeason(x);
-
-var x = 20;
