@@ -1,5 +1,5 @@
 function findWordsMatchingRegex(words, regex) {
-    const matchingWords = [];
+    var matchingWords = [];
 
     for (const word of words) {
         if (regex.test(word)) {
