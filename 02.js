@@ -1,15 +1,26 @@
 function getSeason(month) {
-    if (month === 1 || month === 2 || month === 12){
-        console.log("It's winter.");
-    } else if (month >= 3 && month <= 5) {
-        console.log("It's spring.");
-    }  else if (month >= 6 && month <= 8) {
-        console.log("It's summer.");
-    } else if (month >= 9 && month <= 12) {
-        console.log("It's autumn.");
+    const seasons = {
+        'winter': [1, 2, 12],
+        'spring': [3, 4, 5],
+        'summer': [6, 7, 8],
+        'autumn': [9, 10, 11]
+    }
+
+    let currSeason;
+    for (const season in seasons) {
+        const monthes = seasons[season]
+        if (monthes.includes(month)) {
+            currSeason = season;
+            break;
+        }
+    }
+
+    if (currSeason) {
+        console.log(`It's ${currSeason}.`);
     } else {
         console.log("Invalid month number.");
     }
 }
 
+x = 20
 getSeason(x);
