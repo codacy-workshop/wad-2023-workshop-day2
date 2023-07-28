@@ -1,8 +1,6 @@
 
-let x = 4
-let isThatTrue = false
 
-if ((x = 12) && isThatTrue) {
+if ((4 === 12) && false) {
     console.log("Javascript is the best!")
 }
 
