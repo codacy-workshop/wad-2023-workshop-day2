@@ -1,20 +1,19 @@
 function createCounter() {
-    count = 0;
+  let count = 0;
 
-    function increment() {
-        count++;
-    }
+  function increment() {
+    count++;
+  }
 
-    function getCount() {
-        return count;
-    }
+  function getCount() {
+    return count;
+  }
 
-    return { increment, getCount };
+  return { increment, getCount };
 }
 
 const counter = createCounter();
 
-count ++;
 console.log("Current count:", counter.getCount());
 
 counter.increment();
