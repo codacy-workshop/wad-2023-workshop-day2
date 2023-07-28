@@ -14,7 +14,7 @@ function createCounter() {
 
 const counter = createCounter();
 
-count ++;
+counter.increment();
 console.log("Current count:", counter.getCount());
 
 counter.increment();
