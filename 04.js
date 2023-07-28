@@ -1,6 +1,6 @@
 function createNumberFunctions() {
     var nums = [];
-    
+
     function getFunction(i) {
         return function (j) {
             return i + j;
