@@ -1,13 +1,13 @@
 function generateFunctions() {
-    var functions = [];
+  var functions = [];
+  const func = function () {
+    console.log("Function " + i + " was called.");
+  };
+  for (var i = 0; i < 3; i++) {
+    functions.push(func);
+  }
 
-    for (var i = 0; i < 3; i++) {
-        functions.push(function () {
-            console.log("Function " + i + " was called.");
-        });
-    }
-
-    return functions;
+  return functions;
 }
 
 var myFunctions = generateFunctions();
