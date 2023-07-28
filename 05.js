@@ -1,4 +1,4 @@
-function createCounter() {
+    function createCounter() {
     count = 0;
 
     function increment() {
