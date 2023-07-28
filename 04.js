@@ -1,10 +1,8 @@
-const nums = [];
 
 function createNumberFunctions() { 
+    const nums = [];
     for (i = 0; i < 10; i++) {
-        nums[i] = function (j) {
-            return i + j;
-        };
+        nums[i] += i; 
     }
 
     return nums;
