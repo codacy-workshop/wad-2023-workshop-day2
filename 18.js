@@ -1,10 +1,11 @@
 function generateFunctions() {
   var functions = [];
-  const func = function () {
-    console.log("Function " + i + " was called.");
-  };
+  const func = (i) =>
+    function () {
+      console.log("Function " + i + " was called.");
+    };
   for (var i = 0; i < 3; i++) {
-    functions.push(func);
+    functions.push(func(i));
   }
 
   return functions;
