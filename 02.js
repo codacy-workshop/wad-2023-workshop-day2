@@ -1,26 +1,26 @@
+var x = 3; // Asignamos el valor 3 a la variable x
+
 function getSeason(month) {
     switch (month) {
         case 1:
         case 2:
         case 12:
-            console.log("It's winter.");
+            return "It's winter.";
         case 3:
         case 4:
         case 5:
-            console.log("It's spring.");
+            return "It's spring.";
         case 6:
         case 7:
         case 8:
-            console.log("It's summer.");
+            return "It's summer.";
         case 9:
         case 10:
         case 11:
-            console.log("It's autumn.");
+            return "It's autumn.";
         default:
-            console.log("Invalid month number.");
+            return "Invalid month number.";
     }
 }
 
-getSeason(x);
-
-var x = 20;
+console.log(getSeason(x));
