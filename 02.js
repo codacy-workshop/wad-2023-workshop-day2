@@ -1,4 +1,5 @@
 function getSeason(month) {
+    const seasonNames = ['winter', 'spring', 'summer', 'autumn']
     const seasons = {
         'winter': [1, 2, 12],
         'spring': [3, 4, 5],
@@ -7,13 +8,13 @@ function getSeason(month) {
     }
 
     let currSeason;
-    for (const season in seasons) {
-        const monthes = seasons[season]
-        if (monthes.includes(month)) {
-            currSeason = season;
-            break;
+    seasonNames.forEach(seasonName => {
+        const monthes = seasons[seasonName];
+        if (monthes && monthes.includes(month)) {
+            currSeason = seasonName;
+            return;
         }
-    }
+    })
 
     if (currSeason) {
         console.log(`It's ${currSeason}.`);
@@ -22,5 +23,5 @@ function getSeason(month) {
     }
 }
 
-x = 20
+x = 5
 getSeason(x);
