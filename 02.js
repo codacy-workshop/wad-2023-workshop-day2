@@ -25,7 +25,7 @@ function getSeason(month) {
             break;
     }
 }
+var x = 20;
 
 getSeason(x);
 
-var x = 2;
