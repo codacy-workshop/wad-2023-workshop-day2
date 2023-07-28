@@ -9,7 +9,5 @@ function calculateSum(obj) {
     }
 }
 
-const data = [10, 20, 30];
-
-calculateSum(data);
+calculateSum([10, 20, 30]);
 console.log(globalSum * elem);
