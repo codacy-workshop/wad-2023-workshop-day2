@@ -1,6 +1,6 @@
-var x = 20
+let x = 20
 
-var y = false
+let y = false
 
 if (x === 12 && y) {
     console.log("Nice", x)
