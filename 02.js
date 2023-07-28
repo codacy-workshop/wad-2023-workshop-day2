@@ -1,6 +1,3 @@
-const season = (month) => {
-
-}
 const winter = [1, 2, 12]
 const spring = [3, 4, 5]
 const summer = [6, 7, 8]
