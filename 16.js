@@ -3,8 +3,8 @@ var globalSum = 0;
 var elem = 2
 
 function calculateSum(obj) {
-  for (elem in obj) {
-    globalSum += elem;
+  for (let i = 0; i < obj.length; i++) {
+    globalSum += obj[i];
   }
 }
 
