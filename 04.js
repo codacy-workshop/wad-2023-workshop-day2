@@ -1,6 +1,6 @@
 function createNumberFunctions() {
   let nums = [];
-  for (i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     const index = i;
     nums[index] = function (j) {
       return index + j;
