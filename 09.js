@@ -1,9 +1,11 @@
+function fun() {
+    let x = 4;
+    const isThatTrue = false;
 
-var x = 4
-var isThatTrue = false
+    if ((x === 12) && isThatTrue) {
+        console.log("Javascript is the best!")
+    }
 
-if ((x = 12) && isThatTrue) {
-    console.log("Javascript is the best!")
+    console.log(x)
 }
-
-console.log(x)
+fun();

@@ -1,12 +1,9 @@
-var nums = [];
+function createNumberFunctions() {
+    let nums = [];
 
-function createNumberFunctions() { 
-    var temp;
-
-    for (i = 0; i < 10; i++) {
-        nums[i] = function (j) {
-            return i + j;
-        };
+    for (let i = 0; i < 10; i++) {
+        let x = i;
+        nums[i] = j => x + j;
     }
 
     return nums;
