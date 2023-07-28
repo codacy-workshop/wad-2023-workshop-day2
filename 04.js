@@ -1,11 +1,7 @@
 function createNumberFunctions() {
     let nums = [];
     for (let i = 0; i < 10; i++) {
-        (function (i) {
-            nums[i] = function (j) {
-                return i + j;
-            };
-        }(i));
+        nums[i] = j => i + j;
     }
 
     return nums;
