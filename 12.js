@@ -1,7 +1,7 @@
 function bubbleSort(arr) {
   let swapped;
   let len = arr.length;
-  let worker = arr.slice();
+  const worker = arr.slice();
   do {
     swapped = false;
     for (let i = 0; i < len - 1; i++) {

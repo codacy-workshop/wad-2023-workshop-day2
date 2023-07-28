@@ -6,7 +6,5 @@ function calculateSum(obj) {
   return globalSum;
 }
 
-const data = [10, 20, 30];
 let elem = 2;
-const globalSum = calculateSum(data);
-console.log(globalSum * elem);
+console.log(calculateSum([10, 20, 30]) * 2);
