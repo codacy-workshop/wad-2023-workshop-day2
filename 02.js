@@ -1,26 +1,13 @@
 function getSeason(month) {
-    switch (month) {
-        case 1:
-        case 2:
-        case 12:
-            console.log("It's winter.");
-        case 3:
-        case 4:
-        case 5:
-            console.log("It's spring.");
-        case 6:
-        case 7:
-        case 8:
-            console.log("It's summer.");
-        case 9:
-        case 10:
-        case 11:
-            console.log("It's autumn.");
-        default:
-            console.log("Invalid month number.");
+    if (month > 12) console.log("Invalid month number.");
+    switch (Math.floor(((month + 1) % 12) / 3)) {
+        case 0: console.log("It's winter."); break;
+        case 1: console.log("It's spring."); break;
+        case 2: console.log("It's summer."); break;
+        case 3: console.log("It's autumn."); break;
+        default: console.log("Invalid month number.");
     }
 }
 
-getSeason(x);
-
-var x = 20;
+const month = 20;
+getSeason(month);
