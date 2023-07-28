@@ -23,5 +23,5 @@ function getSeason(month) {
     }
 }
 
-x = 5
+const x = 5
 getSeason(x);
