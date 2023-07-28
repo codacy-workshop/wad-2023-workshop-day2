@@ -1,14 +1,16 @@
-var globalSum = 0;
-
-var elem = 2
+var elem = 2;
 
 function calculateSum(obj) {
-  for (elem in obj) {
-    globalSum += elem;
+  let notSoGlobalSum = 0;
+  for (let elem in obj) {
+    if (obj.hasOwnProperty(elem)) {
+      notSoGlobalSum += elem;
+    }
   }
+  return notSoGlobalSum;
 }
 
 var data = [10, 20, 30];
 
-calculateSum(data);
+const globalSum = calculateSum(data);
 console.log(globalSum * elem);
