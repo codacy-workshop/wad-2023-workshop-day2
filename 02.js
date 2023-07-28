@@ -1,22 +1,28 @@
 function getSeason(month) {
-    let message = "Invalid month number.";
-    if (month === 1 || month === 2 || month === 12) {
-        message = "It's winter.";
+    if (month < 1){
+        console.log("Invalid month number.");
+        return;
     }
-    
-    if (month === 3 || month === 4 || month === 5) {
-        message = "It's spring.";
-    }
-    
-    if (month === 6 || month === 7 || month === 8) {
-        message = "It's summer.";
-    }
-    
-    if (month === 9 || month === 10 || month === 11) {
-        message = "It's autumn.";
+    if (month > 12){
+        console.log("Invalid month number.");
+        return;
     }
 
-    console.log(message);
+    let a = {};
+    a[1] = "It's winter.";
+    a[2] = "It's winter.";
+    a[3] = "It's spring.";
+    a[4] = "It's spring.";
+    a[5] = "It's spring.";
+    a[6] = "It's summer.";
+    a[7] = "It's summer.";
+    a[8] = "It's summer.";
+    a[9] = "It's autumn.";
+    a[10] = "It's autumn.";
+    a[11] = "It's autumn.";  
+    a[12] = "It's winter.";
+    
+    console.log(a[month]);
 }
 
 var x = 3;
