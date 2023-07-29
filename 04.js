@@ -7,7 +7,7 @@ function createNumberFunctions() {
                         nums[i] = function (j) { 
                                     return i + j;
                                 };
-                    } (i))
+                    })(i)
     }
 
     return nums;

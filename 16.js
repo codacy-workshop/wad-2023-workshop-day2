@@ -10,5 +10,5 @@ function calculateSum(obj) {
 
 let data = [10, 20, 30];
 
-globalSum = calculateSum(data);
+let globalSum = calculateSum(data);
 console.log(globalSum * elem);
