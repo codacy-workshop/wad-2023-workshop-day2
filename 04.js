@@ -4,7 +4,7 @@ function createNumberFunctions() {
 
     for (let i = 0; i < 10; i++) {
         nums[i] = (function (i) {
-                        nums[i] = function (j) { 
+                        return function (j) { 
                                     return i + j;
                                 };
                     })(i)
@@ -14,4 +14,4 @@ function createNumberFunctions() {
 }
 
 const numberFunctions = createNumberFunctions();
-console.log(numberFunctions[0](2));
+console.log(numberFunctions[9](2));
